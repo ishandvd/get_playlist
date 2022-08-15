@@ -7,55 +7,38 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Hidden Search</title>
+    <title>Sheet Music Getter</title>
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <header>
-        <div class="search">
-            <input type="text" id="input" class="input" placeholder="Search...">
-            <button class="btn">
-                <i class="fas fa-search"></i>
+        <div id="loggedin">
+            <button id="logout-button" class="btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
             </button>
+            
+            <button class="btn" id="getCurrent">Get current song</button>
+            
         </div>
+
     </header>
 
+    <div id="login">
+        <h1>
+          log in with Spotify to find your lyrics <i class="fa-solid fa-face-grin" id="emoji"></i>
+        </h1>
+        <button id="login-button" class="btn">
+            <i class="fa-brands fa-spotify" id="spotify"></i>
+        </button>
+    </div>
 
-    <ul id="albums">
-<!-- 
-        <div class="album">
-            <div class="wrapper">
-                <img src="https://i.scdn.co/image/ab67616d00001e029feadc48ab0661e9b3a9170b" class="albumArt">
-            </div>
-            <div class="albumInfo">
-                <h1 class="albumTitle">TESTING</h1>
-                <p >Released: 2018-05-25<br>
-                    Track Count:  15</p>
-            </div>
-        </div>
+    <div id="content">
+        <input type="text" id="tempo">
+        <button class="btn" id="recommend">Generate Recommendations</button>
+    </div>
 
-        <div class="album">
-            <div class="wrapper">
-                <img src="https://i.scdn.co/image/ab67616d00001e029feadc48ab0661e9b3a9170b" class="albumArt">
-            </div>
-            <div class="albumInfo">
-                <h1 class="albumTitle">TESTING</h1>
-                <p >Released: 2018-05-25<br>
-                    Track Count:  15</p>
-            </div>
-        </div>
-        <div class="album">
-            <div class="wrapper">
-                <img src="https://i.scdn.co/image/ab67616d00001e029feadc48ab0661e9b3a9170b" class="albumArt">
-            </div>
-            <div class="albumInfo">
-                <h1 class="albumTitle">TESTING</h1>
-                <p >Released: 2018-05-25<br>
-                    Track Count:  15</p>
-            </div>
-        </div> -->
-    </ul>
+
     
+
     <script src="script.js"></script>
 </body>
 </html>
